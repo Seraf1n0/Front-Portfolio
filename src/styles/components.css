@@ -1,2 +1,111 @@
 /* Estilos base para componentes reutilizables */
 
+
+/* Carousel */
+.carousel-container {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	width: 100%;
+	margin: 2rem 0;
+}
+
+.carousel-track {
+	display: flex;
+	gap: 1.5rem;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+	padding: 1rem 0;
+	flex: 1 1 auto;
+	scrollbar-width: thin;
+	scrollbar-color: #23293a #181c24;
+}
+.carousel-track::-webkit-scrollbar {
+	height: 8px;
+}
+.carousel-track::-webkit-scrollbar-thumb {
+	background: #23293a;
+	border-radius: 4px;
+}
+.carousel-btn {
+	background: #23293a;
+	color: #e6eaf3;
+	border: none;
+	border-radius: 50%;
+	width: 2.5rem;
+	height: 2.5rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+	box-shadow: 0 2px 8px 0 rgba(30, 40, 60, 0.12);
+	transition: background 0.2s, color 0.2s;
+}
+.carousel-btn:hover, .carousel-btn:focus {
+	background: #2e3650;
+	color: #fff;
+}
+.carousel-btn.left {
+	margin-right: 0.5rem;
+}
+.carousel-btn.right {
+	margin-left: 0.5rem;
+}
+
+/* Card */
+.card-base {
+	background: #181c24;
+	color: #e6eaf3;
+	border-radius: 1.2rem;
+	padding: 2rem 1.5rem;
+	margin: 0 auto;
+	max-width: 38rem;
+	min-width: 0;
+	box-sizing: border-box;
+	transition: box-shadow 0.2s, background 0.2s;
+}
+
+.card-base:hover, .card-base:focus {
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18);
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* Estilos para el cardCurso */
+.card-curso {
+  min-width: 260px;
+  max-width: 380px;
+  margin: 0 0.5rem;
+}
+
+.dark-card {
+	background: linear-gradient(135deg, #181c24 80%, #23293a 100%);
+}
+
+.shadow-card {
+	box-shadow: 0 2px 12px 0 rgba(30, 40, 60, 0.18);
+}
+
+.card-title {
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	letter-spacing: 0.01em;
+}
+
+.card-content {
+	font-size: 1rem;
+	line-height: 1.7;
+}
+
+.card-link-wrapper {
+	display: block;
+	text-decoration: none;
+}
+
+.card-link {
+	cursor: pointer;
+	outline: none;
+}
+.card-link:hover, .card-link:focus {
+	box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18);
+	transform: translateY(-2px) scale(1.02);
+	background: linear-gradient(135deg, #23293a 80%, #181c24 100%);
+}
