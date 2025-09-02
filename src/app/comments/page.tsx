@@ -1,9 +1,10 @@
+import "../../styles/comments.css";
 
 export default function CommentsPage() {
   return (
-    <div>
+    <main className="comments-container">
       <h1>Comentarios</h1>
-      <p>bla bla</p>
-    </div>
+      <p>Pagina para comentarios de compañeros</p>
+    </main>
   );
-};
+}
