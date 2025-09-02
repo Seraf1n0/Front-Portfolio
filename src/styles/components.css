@@ -1,5 +1,38 @@
 /* Estilos base para componentes reutilizables */
 
+/* ModalTrabajos */
+.modal-overlay {
+	position: fixed;
+	top: 0; left: 0; right: 0; bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+.modal-content {
+	background: #23293a;
+	border-radius: 1rem;
+	padding: 2rem;
+	min-width: 320px;
+	max-width: 90vw;
+	box-shadow: 0 4px 24px 0 rgba(0,0,0,0.25);
+	position: relative;
+}
+
+.modal-close {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	background: none;
+	border: none;
+	font-size: 2rem;
+	color: #fff;
+	cursor: pointer;
+}
 
 /* Carousel */
 .carousel-container {
