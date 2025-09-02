@@ -1,5 +1,44 @@
 /* Estilos base para componentes reutilizables */
 
+/* Filtro de Trabajos */
+.filtros-trabajos form{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	align-items: center;
+	background: #23293a;
+	padding: 1rem 1.5rem;
+	border-radius: 1rem;
+	margin-top: 2rem;
+}
+
+.filtros-trabajos label {
+	display: flex;
+	flex-direction: column;
+	color: #e6eaf3;
+	font-size: 1rem;
+	min-width: 180px;
+}
+
+.filtros-trabajos select,
+.filtros-trabajos input[type="text"] 
+.filtros-trabajos input[type="date"] {
+	margin-top: 0.5rem;
+	padding: 0.5rem 0.75rem;
+	border-radius: 0,5rem;
+	border: 1px solid #2e3440;
+	background: #181f2a;
+	color: #e6eaf3;
+	font-size: 1rem;
+	outline: none;
+}
+
+.filtros-trabajos select:focus,
+.filtros-trabajos input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px #3b82f680;
+}
+
 /* ModalTrabajos */
 .modal-overlay {
 	position: fixed;
