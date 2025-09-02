@@ -1,5 +1,68 @@
 /* Estilos base para componentes reutilizables */
 
+/* CardTrabajo */
+.card-trabajo {
+	display: flex;
+	flex-direction: column;
+	width: 100%; /* Ancho completo del contenedor padre para tener espacio suficiente horizintal*/
+	max-width: 900px; 
+	margin: 1.5rem auto;
+	padding: 2rem;
+	background: #202736;
+	box-shadow: 0 2px 12px rgba(0,0,0,0.14);
+	border-radius: 1rem;
+}
+
+.card-trabajo header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 0.75rem;
+}
+
+.card-trabajo-title {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #e3e8f0;
+}
+
+.card-trabajo-tipo {
+	background: #29304a;
+	color: #7dd3fc;
+	padding: 0.3rem 0.8rem;
+	border-radius: 0.5rem;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+.card-trabajo-desc {
+	margin-bottom: 1rem;
+	color: #cbd5e1;
+}
+
+.card-trabajo-info {
+	display: flex;
+	gap: 2rem;
+	margin-bottom: 1rem;
+	color: #a5b4fc;
+}
+
+.card-trabajo-links {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.card-trabajo-links a {
+	color: #38bdf8;
+	text-decoration: underline;
+	font-weight: 500;
+	transition: color 0.2s;
+}
+
+.card-trabajo-links a:hover {
+	color: #0ea5e9;
+}
+
 /* Filtro de Trabajos */
 .filtros-trabajos form{
 	display: flex;
@@ -73,6 +136,27 @@
 	cursor: pointer;
 }
 
+.filtros-section {
+	margin-bottom: 2rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #2e3440;
+}
+
+.filtros-title {
+	color: #7dd3fc;
+	font-size: 1.1rem;
+	margin-bottom: 0.5rem;
+}
+
+.trabajos-list {
+	max-height: 50vh;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding-right: 0.5rem;
+}
+
 /* Carousel */
 .carousel-container {
 	display: flex;
@@ -136,15 +220,15 @@
 }
 
 .card-base:hover, .card-base:focus {
-  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18);
-  transform: translateY(-2px) scale(1.02);
+	box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18);
+	transform: translateY(-2px) scale(1.02);
 }
 
 /* Estilos para el cardCurso */
 .card-curso {
-  min-width: 260px;
-  max-width: 380px;
-  margin: 0 0.5rem;
+	min-width: 260px;
+	max-width: 380px;
+	margin: 0 0.5rem;
 }
 
 .dark-card {
