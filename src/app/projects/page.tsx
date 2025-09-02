@@ -1,6 +1,7 @@
 "use client";
 import "../../styles/projects.css";
 import React, {useState} from "react";
+import FiltrosTrabajos from "@/components/FiltrosTrabajo";
 import ModalTrabajos from "@/components/ModalTrabajos";
 import Carousel from "@/components/Carousel";
 import CardCurso from "@/components/CardCurso";
@@ -28,8 +29,11 @@ export default function ProjectsPage() {
       </Carousel>
       <ModalTrabajos open={!!cursoSeleccionado} onClose={() => setCursoSeleccionado(null)}>
         <h2>Trabajos del Curso {cursoSeleccionado?.nombre} - {cursoSeleccionado?.codigo}</h2>
+        <section className="filtros-section">
+          <FiltrosTrabajos />
+        </section>
         <section className="trabajos-list">
-          
+
         </section>
         {/* cardsTrabajo y filtros */}
       </ModalTrabajos>
