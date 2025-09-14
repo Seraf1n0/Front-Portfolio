@@ -1,24 +1,155 @@
 /* Estilos para la página Projects */
 
-
 .projects-container {
-	max-width: 900px;
-	margin: 0 auto;
-	padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Header de la página */
+.projects-header {
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .projects-title {
-	text-align: center;
-	font-size: 2.2rem;
-	font-weight: 700;
-	color: #e3e8f0;
-	margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #e3e8f0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
 .projects-desc {
-	text-align: center;
-	color: #a5b4fc;
-	font-size: 1.1rem;
-	margin-bottom: 2.5rem;
-	line-height: 1.7;
+  color: #a5b4fc;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Sección de cursos */
+.cursos-section {
+  margin-bottom: 3rem;
+}
+
+.cursos-section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Grid responsive de cursos */
+.cursos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .projects-container {
+    padding: 1rem;
+  }
+  
+  .projects-title {
+    font-size: 2rem;
+  }
+  
+  .cursos-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .cursos-section-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cursos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  .cursos-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Estilos para el modal */
+.modal-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #374151;
+}
+
+.modal-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #e3e8f0;
+  margin-bottom: 0.5rem;
+}
+
+.modal-subtitle {
+  color: #a5b4fc;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Sección de filtros en el modal */
+.filtros-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #1f2937;
+  border-radius: 8px;
+  border: 1px solid #374151;
+}
+
+.filtros-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  margin-bottom: 1rem;
+}
+
+/* Sección de trabajos en el modal */
+.trabajos-section {
+  margin-top: 2rem;
+}
+
+.trabajos-section-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  margin-bottom: 1.5rem;
+}
+
+.trabajos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Responsive para trabajos en modal */
+@media (max-width: 768px) {
+  .trabajos-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .filtros-section {
+    padding: 1rem;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+  }
 }

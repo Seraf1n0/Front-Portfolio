@@ -1,4 +1,5 @@
 import Card from "@/components/Card";
+import "../styles/home.css";
 
 export default function Home() {
   return (
@@ -10,13 +11,10 @@ export default function Home() {
       </section>
       <section className="cards">
         <Card title="Sobre mí" href="/about">
-          <p>Ingeniero en Computación, ...........</p>
+          <p>Ingeniero en Computación, texto mieo</p>
         </Card>
         <Card title="Proyectos" href="/projects">
           <p>Puedes explorar algunos proyectos realizados a lo largo de mi carrera.</p>
-        </Card>
-        <Card title="Habilidades" href="/skills">
-          <p>AngularJS, .NET, Node.js, SQL, y más.</p>
         </Card>
         <Card title="Comentarios" href="/comments">
           <p>Deja un comentario o feedback.</p>
