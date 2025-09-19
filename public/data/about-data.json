@@ -1,0 +1,120 @@
+{
+  "profile": {
+    "name": "Yosimar Montenegro",
+    "title": "Estudiante de Ingeniería en Computación",
+    "location": "Limón, Costa Rica"
+  },
+  "biography": {
+    "title": "Biografía Profesional",
+    "paragraphs": [
+      "Soy estudiante de Ingeniería en Computación con pasión por el desarrollo de software y las tecnologías web modernas. Me apasiona crear soluciones de software de casos de la vida real, resolviendo problemas de cualquier tipo.",
+      "A lo largo de mi carrera universitaria, he desarrollado una sólida base en programación en distintos enfoques, sistemas de bases de datos, algoritmos, optimización, diseño, etc. Mi objetivo es lograr crear sistemas de software variados que cumplan las necesidades de sus usuarios.",
+      "Busco constantemente oportunidades para aprender nuevas tecnologías y metodologías, manteniéndome actualizado con las mejores prácticas del desarrollo de software."
+    ]
+  },
+  "skills": {
+    "title": "Habilidades Técnicas",
+    "categories": [
+      {
+        "title": "Lenguajes de Programación",
+        "items": ["JavaScript", "TypeScript", "Python", "C#", "Java", "HTML/CSS"]
+      },
+      {
+        "title": "Frameworks & Librerías",
+        "items": ["Angular", "Next.js", "Vue.js", "Node.js", ".NET", "Tailwind CSS", "Ionic"]
+      },
+      {
+        "title": "Bases de Datos",
+        "items": ["MySQL", "MariaDB", "FireBase", "SQL Server"]
+      },
+      {
+        "title": "Herramientas & Tecnologías",
+        "items": ["Git & GitHub", "VS Code", "Selenium - K6", "Figma", "ThunderClient - Postman"]
+      }
+    ]
+  },
+  "certifications": {
+    "title": "Certificaciones y Cursos",
+    "items": [
+      {
+        "institution": "Maxwell Leadership Foundation",
+        "name": "Habilidades blandas y liderazgo",
+        "date": "2023",
+        "status": "completed",
+        "link": null
+      },
+      {
+        "institution": "Microsoft Learn",
+        "name": "Desarrollo de soluciones de Computer Vision en Azure",
+        "date": "En progreso - 2025",
+        "status": "in-progress",
+        "link": "https://docs.microsoft.com/learn/paths/create-computer-vision-solutions-azure-cognitive-services/"
+      },
+      {
+        "institution": "Microsoft Learn",
+        "name": "Introducción al programa de Microsoft Learn para educadores",
+        "date": "En progreso - 2025",
+        "status": "in-progress",
+        "link": "https://docs.microsoft.com/learn/educator-center/"
+      }
+    ]
+  },
+  "additionalInfo": {
+    "title": "Información Adicional",
+    "sections": [
+      {
+        "title": "Intereses Profesionales",
+        "items": [
+          "Desarrollo de aplicaciones y servicios web",
+          "Inteligencia artificial",
+          "Arquitectura de software",
+          "Desarrollo móvil multiplataforma"
+        ]
+      },
+      {
+        "title": "Mis Logros",
+        "items": [
+          "Adaptación a cualquier equipo de trabajo",
+          "Un equipo multidisciplinario para trabajar",
+          "He desarrollado una carrera académica exitosa"
+        ]
+      },
+      {
+        "title": "Proyectos Futuros",
+        "items": [
+          "Seratube: Una app para descargar multimedia directamente de links de YouTube",
+          "SeraCrypto: Un bot implementado en Python para predicciones de compra y venta",
+          "LumenTec: Organización enfocada al desarrollo de software con colegas de la universidad"
+        ]
+      }
+    ]
+  },
+  "socialLinks": {
+    "title": "Redes Profesionales",
+    "links": [
+      {
+        "platform": "linkedin",
+        "url": "https://www.linkedin.com/in/yosimar-montenegro-464642338/",
+        "username": "Yosimar Montenegro"
+      },
+      {
+        "platform": "github",
+        "url": "https://github.com/Seraf1n0",
+        "username": "Seraf1n0"
+      },
+      {
+        "platform": "email",
+        "url": "mailto:yosimarantonio12@gmail.com"
+      },
+      {
+        "platform": "cv",
+        "url": "/cv/yosimar-cv.pdf",
+        "customLabel": "Descargar CV"
+      }
+    ]
+  },
+  "cvExport": {
+    "buttonText": "Generar CV en PDF",
+    "description": "Descarga un currículum profesional generado automáticamente con toda la información de esta página."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "pageContent": {
+    "title": "Proyectos Académicos",
+    "description": "Explora los diferentes cursos de mi carrera y los proyectos desarrollados en cada uno. Cada curso puede incluir laboratorios, tareas, proyectos e investigaciones que demuestran el progreso y aprendizaje en diferentes áreas de la ingeniería en computación.",
+    "coursesSection": {
+      "title": "Cursos por Semestre"
+    },
+    "modalContent": {
+      "filtersTitle": "Filtrar trabajos por:",
+      "worksListTitle": "Lista de Trabajos"
+      
+    }
+  }
+}
