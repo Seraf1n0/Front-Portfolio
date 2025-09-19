@@ -2,7 +2,7 @@ import "../styles/components.css";
 import Link from "next/link";
 
 const links = [
-  { href: "/", label: "Home" },
+  { href: "/", label: "Inicio" },
   { href: "/about", label: "Sobre Mí" },
   { href: "/projects", label: "Proyectos" },
 ];

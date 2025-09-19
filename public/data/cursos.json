@@ -1,0 +1,68 @@
+{
+  "cursos": [
+    {
+      "codigo": "IC-8057",
+      "nombre": "Introducción al Desarrollo de Páginas Web",
+      "semestre": "6",
+      "periodo": "2025-II",
+      "descripcion": "Introducción al desarrollo de aplicaciones dinámicas para Internet, cubriendo tecnologías, metodologías, lenguajes, y haciendo especial énfasis en la seguridad y el acceso a la información.",
+      "trabajos": [
+        {
+          "nombre": "Lab1: Aprendiendo MarkDown",
+          "tipo": "Laboratorio",
+          "descripcion": "Una página construida con MarkDown, con información general sobre el desarrollo web.",
+          "fecha": "2025-08-10",
+          "tecnologias": ["MarkDown", "Netlify"],
+          "repoUrl": "https://github.com/Seraf1n0/Lab1-DesarrolloWeb",
+          "deployUrl": "https://illustrious-semolina-bc6bb4.netlify.app/"
+        },
+        {
+          "nombre": "Lab2: Estructura Básica de HTML",
+          "tipo": "Laboratorio",
+          "descripcion": "Creación de página web utilizando HTML, estructura básica con accesibilidad.",
+          "fecha": "2025-08-16",
+          "tecnologias": ["HTML", "Netlify"],
+          "repoUrl": "https://github.com/Seraf1n0/Lab1-DesarrolloWeb",
+          "deployUrl": null
+        },
+        {
+          "nombre": "Lab3: CSS básico, Selectores, pseudo clases y más",
+          "tipo": "Laboratorio",
+          "descripcion": "Añadiendo estilos al Lab 2, tomando en cuenta box-sizing, selectores, etc.",
+          "fecha": "2025-08-25",
+          "tecnologias": ["HTML", "CSS", "Netlify"],
+          "repoUrl": "https://github.com/Seraf1n0/SurfCR/tree/lab3-selectores-boxmodel",
+          "deployUrl": "https://surfcr.netlify.app"
+        },
+        {
+          "nombre": "Lab4: Diseño responsive y principios de accesibilidad",
+          "tipo": "Laboratorio",
+          "descripcion": "Lectura de presentación sobre responsive y accesibilidad, resolución de mini caso y quiz.",
+          "fecha": "2025-08-29",
+          "tecnologias": ["txt"],
+          "repoUrl": null,
+          "deployUrl": null
+        },
+        {
+          "nombre": "Lab5: Responsive",
+          "tipo": "Laboratorio",
+          "descripcion": "Empezar con estilos Responsives para la página del lab 2 y 3.",
+          "fecha": "2025-09-07",
+          "tecnologias": ["HTML", "CSS", "Netlify"],
+          "repoUrl": "https://github.com/Seraf1n0/SurfCR/tree/lab5-responsive",
+          "deployUrl": "https://surfcr.netlify.app"
+        },
+        {
+          "nombre": "Portafolio: Entrega 1",
+          "tipo": "Portafolio",
+          "descripcion": "Crear un portafolio profesional con secciones: Proyectos y Sobre Mi, como forma de presentar la experiencia academica del estudiante.",
+          "fecha": "2025-09-19",
+          "tecnologias": ["HTML", "CSS", "TypeScript", "Next JS", "Vercel"],
+          "repoUrl": "https://github.com/Seraf1n0/Front-Portfolio",
+          "deployUrl": "https://surfcr.netlify.app"
+
+        }
+      ]
+    }
+  ]
+}

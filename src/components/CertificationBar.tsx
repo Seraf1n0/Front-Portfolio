@@ -4,7 +4,7 @@ interface CertificationBarProps {
   institucion: string;
   nombre: string;
   fecha: string;
-  link?: string;
+  link?: string | null;
   status?: 'completed' | 'in-progress'; // Estatus del curso o certificacion pa cursos en progreso 
 }
 

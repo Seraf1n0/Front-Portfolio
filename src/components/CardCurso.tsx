@@ -13,10 +13,11 @@ interface CardCursoProps {
 
 export default function CardCurso({ codigo, nombre, semestre, periodo, descripcion, onclick }: CardCursoProps) {
     return (
-        <div className="card-base card-curso" onClick={onclick} tabIndex={0} role="button">
+        <div className="card-base card-curso">
             <h2 className="card-curso-title">{nombre}</h2>
             <h3 className="card-curso-subtitle">{codigo} - Semestre {semestre} - {periodo}</h3>
             <p className="card-curso-description">{descripcion}</p>
+            <button className="card-curso-button" onClick={onclick}>Ver Curso</button>
         </div>
     );
 };

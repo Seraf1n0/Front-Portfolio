@@ -242,7 +242,10 @@
 
 /*  Card Curso  */
 .card-curso {
+  display: flex;
+  flex-direction: column;
   cursor: pointer;
+  justify-content: space-between;
   position: relative;
   overflow: hidden;
 }
@@ -291,6 +294,35 @@
   color: #cbd5e1;
   line-height: 1.6;
   font-size: 0.95rem;
+}
+
+.card-curso-button {
+  align-self: center;
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: #7dd3fc;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(125, 211, 252, 0.3);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-curso-button:hover {
+  background: rgba(125, 211, 252, 0.1);
+  border-color: #7dd3fc;
+  transform: translateX(2px);
+}
+
+.card-curso-button:focus {
+  outline: 2px solid #7dd3fc;
+  outline-offset: 2px;
 }
 
 /*  Card Trabajo */
@@ -477,6 +509,7 @@
   padding: 1.5rem;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 100%;
   position: relative;
   overflow: hidden;
 }

@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/components.css";
 
 interface SocialLinkProps {
-  platform: 'linkedin' | 'github' | 'email' | 'cv' | 'behance' | 'devto' | 'medium' | 'twitter';
+  platform: string | 'linkedin' | 'github' | 'email' | 'cv';
   url: string;
   username?: string;
   customLabel?: string;

@@ -1,5 +1,48 @@
 /* Estilos para la página Projects */
 
+.loading-message {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #cbd5e1;
+  font-size: 1.2rem;
+}
+
+.error-message {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #1e293b;
+  border: 1px solid #ef4444;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+.error-message h2 {
+  color: #ef4444;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.error-message p {
+  color: #cbd5e1;
+  font-size: 1rem;
+}
+
+/* Mensaje cuando no hay trabajos */
+.no-trabajos-message {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(51, 65, 85, 0.3);
+  border-radius: 8px;
+  border: 1px dashed #475569;
+}
+
+.no-trabajos-message p {
+  color: #94a3b8;
+  margin: 0;
+  font-style: italic;
+}
+
 .projects-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -91,6 +134,13 @@
   border-bottom: 1px solid #374151;
 }
 
+.modal-period {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin: 0.5rem 0 0 0;
+  font-style: italic;
+}
+
 .modal-title {
   font-size: 1.8rem;
   font-weight: 600;
@@ -126,9 +176,12 @@
 }
 
 .trabajos-section-title {
-  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #e3e8f0;
+  font-size: 1.2rem;
   font-weight: 600;
-  color: #cbd5e1;
   margin-bottom: 1.5rem;
 }
 

@@ -1,0 +1,43 @@
+{
+  "introduction": {
+    "greeting": "Hola, soy Yosimar Montenegro",
+    "title": "Estudiante de Ingeniería en Computación",
+    "description": "Apasionado por el desarrollo de software y las tecnologías emergentes. Mi enfoque está en crear soluciones que vayan más allá de lo esperado."
+  },
+  "portfolioPurpose": {
+    "title": "Propósito del Portafolio",
+    "description": "Este sitio web presenta mi trayectoria académica, proyectos desarrollados y habilidades técnicas adquiridas durante mi formación. Aquí podrás explorar mi crecimiento profesional y los trabajos que demuestran mi compromiso con la excelencia en el desarrollo de software."
+  },
+  "navigationCards": [
+    {
+      "title": "Sobre Mí",
+      "href": "/about",
+      "description": "Conoce mi perfil profesional, habilidades técnicas, certificaciones y experiencia académica en ingeniería en computación.",
+      "icon": "user"
+    },
+    {
+      "title": "Proyectos",
+      "href": "/projects", 
+      "description": "Explora los proyectos académicos desarrollados en diferentes cursos, incluyendo laboratorios, tareas e investigaciones.",
+      "icon": "folder"
+    },
+    {
+      "title": "Comentarios",
+      "href": "/comments",
+      "description": "Comparte tus comentarios, sugerencias o preguntas sobre mi trabajo y trayectoria académica.",
+      "icon": "message"
+    }
+  ],
+  "callToAction": {
+    "title": "Conectemos",
+    "description": "¿Interesado en conocer más sobre mis trabajos?",
+    "primaryButton": {
+      "text": "Ver Proyectos",
+      "href": "/projects"
+    },
+    "secondaryButton": {
+      "text": "Contactar",
+      "href": "/about#social-heading"
+    }
+  }
+}
