@@ -59,7 +59,7 @@
           "fecha": "2025-09-19",
           "tecnologias": ["HTML", "CSS", "TypeScript", "Next JS", "Vercel"],
           "repoUrl": "https://github.com/Seraf1n0/Front-Portfolio",
-          "deployUrl": "https://surfcr.netlify.app"
+          "deployUrl": "https://front-portfolio-black.vercel.app/"
 
         }
       ]

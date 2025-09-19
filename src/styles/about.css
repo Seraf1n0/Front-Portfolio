@@ -254,26 +254,58 @@
   margin-bottom: 2rem;
 }
 
+.cv-buttons-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
 .cv-export-button {
   background: #7dd3fc;
   color: #0f172a;
   border: none;
   padding: 1rem 2rem;
   border-radius: 8px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-bottom: 1rem;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  min-width: 180px;
+  justify-content: center;
 }
 
-.cv-export-button:hover {
+.cv-export-button:hover:not(:disabled) {
   background: #a5b4fc;
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(125, 211, 252, 0.3);
+}
+
+.cv-export-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.cv-primary {
+  background: #7dd3fc;
+  color: #0f172a;
+}
+
+.cv-secondary {
+  background: transparent;
+  color: #7dd3fc;
+  border: 2px solid #7dd3fc;
+}
+
+.cv-secondary:hover:not(:disabled) {
+  background: rgba(125, 211, 252, 0.1);
+  color: #a5b4fc;
+  border-color: #a5b4fc;
 }
 
 .cv-export-description {
@@ -359,12 +391,18 @@
     font-size: 0.85rem;
   }
 
+  .cv-buttons-group {
+    flex-direction: column;
+    align-items: center;
+  }
+  
   .cv-export-button {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 0.8rem 1.5rem;
+    min-width: 160px;
   }
 
-    .certifications-grid {
+  .certifications-grid {
     grid-template-columns: 1fr;
     gap: 1.2rem;
   }
@@ -397,6 +435,12 @@
   .skill-item {
     padding: 0.5rem;
     font-size: 0.8rem;
+  }
+
+  .cv-export-button {
+    font-size: 0.85rem;
+    padding: 0.7rem 1.2rem;
+    min-width: 140px;
   }
 
   .certifications-grid {

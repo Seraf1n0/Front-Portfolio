@@ -79,6 +79,7 @@ export default function AboutPage() {
   const [aboutData, setAboutData] = useState<AboutData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [generatingPDF, setGeneratingPDF] = useState(false);
 
   useEffect(() => {
     const loadAboutData = async () => {
@@ -102,6 +103,71 @@ export default function AboutPage() {
 
     loadAboutData();
   }, []);
+
+  // Función para generar PDF desde HTML usando html2pdf
+  const generatePDFFromHTML = async () => {
+    if (!aboutData) return;
+    
+    try {
+      setGeneratingPDF(true);
+      
+      // import dinamico
+      const html2pdf = (await import('html2pdf.js')).default;
+      
+      // Se selecciona todo el contenido de la pagina
+      const element = document.querySelector('.about-main');
+      if (!element) {
+        throw new Error('No se encontró el contenido para exportar');
+      }
+      
+      // Sin boton para exportar para que no salga en pdf
+      const clonedElement = element.cloneNode(true) as HTMLElement;
+      const exportSection = clonedElement.querySelector('.cv-export-section');
+      if (exportSection) {
+        exportSection.remove();
+      }
+      
+      document.body.style.backgroundColor = '#0f172a';
+      
+      // Configuración del PDF
+      const opt = {
+        margin: 0.3,
+        filename: `CV_${aboutData.profile.name.replace(/\s+/g, '_')}.pdf`,
+        image: { 
+          type: 'jpeg' as const, 
+          quality: 0.98 
+        },
+        html2canvas: { 
+          scale: 2,
+          useCORS: true,
+          allowTaint: true,
+          backgroundColor: '#0f172a',
+          windowWidth: 1400,
+          windowHeight: 900,
+          scrollX: 0,
+          scrollY: 0,
+          x: 0,
+          y: 0
+        },
+        jsPDF: { 
+          unit: 'in' as const, 
+          format: 'a4' as const, 
+          orientation: 'portrait' as const,
+          putOnlyUsedFonts: true,
+          compress: true
+        }
+      };
+      
+      await html2pdf().set(opt).from(clonedElement).save();
+      document.body.style.backgroundColor = '';
+      
+    } catch (error) {
+      console.error('Error generando PDF:', error);
+      alert('Error al generar el PDF. Por favor, intenta de nuevo.');
+    } finally {
+      setGeneratingPDF(false);
+    }
+  };
 
   if (loading) {
     return (
@@ -231,8 +297,13 @@ export default function AboutPage() {
 
         {/* Botón para exportar CV */}
         <aside className="cv-export-section">
-          <button className="cv-export-button" aria-label="Generar y descargar currículum en PDF">
-            {aboutData.cvExport.buttonText}
+          <button 
+            className="cv-export-button"
+            onClick={generatePDFFromHTML}
+            disabled={generatingPDF}
+            aria-label="Generar y descargar currículum en PDF"
+          >
+            {generatingPDF ? 'Generando PDF...' : aboutData.cvExport.buttonText}
           </button>
           <p className="cv-export-description">
             {aboutData.cvExport.description}
