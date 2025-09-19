@@ -3,22 +3,30 @@ import Link from "next/link";
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "Sobre Mi" },
-  { href: "/comments", label: "Comentarios" },
+  { href: "/about", label: "Sobre Mí" },
   { href: "/projects", label: "Proyectos" },
 ];
+
 export default function Navbar() {
-    return (
-        <nav className="bg-gray-800 p-4">
-            <ul className="flex gap-6">
-                {links.map((link) => (
-                <li key={link.href}>
-                    <Link href={link.href} className="text-white hover:underline">
-                    {link.label}
-                    </Link>
-                </li>
-                ))}
-            </ul>
-        </nav>
-    )
+  return (
+    <nav className="navbar">
+      <div className="navbar-container">
+        <div className="navbar-brand">
+          <Link href="/" className="brand-link">
+            Yosimar
+          </Link>
+        </div>
+        
+        <ul className="navbar-links">
+          {links.map((link) => (
+            <li key={link.href}>
+              <Link href={link.href} className="nav-link">
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
+  );
 }

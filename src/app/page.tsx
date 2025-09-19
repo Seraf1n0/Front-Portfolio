@@ -16,9 +16,6 @@ export default function Home() {
         <Card title="Proyectos" href="/projects">
           <p>Puedes explorar algunos proyectos realizados a lo largo de mi carrera.</p>
         </Card>
-        <Card title="Comentarios" href="/comments">
-          <p>Deja un comentario o feedback.</p>
-        </Card>
         {/* las demás secciones iran aca, aun requiere mejora de estructura arriba. */}
       </section>
     </main>
