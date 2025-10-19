@@ -70,6 +70,24 @@
           "tecnologias": ["HTML", "CSS", "JavaScript"],
           "repoUrl": "https://github.com/Seraf1n0/Lab6-Desarrollo-Web",
           "deployUrl": null
+        },
+        {
+          "nombre": "Lab7: ",
+          "tipo": "Laboratorio",
+          "descripcion": "Presentación sobre API Rest",
+          "fecha": "2025-09-24",
+          "tecnologias": ["JavaScript"],
+          "repoUrl": null,
+          "deployUrl": null
+        },
+        {
+          "nombre": "Lab8: ",
+          "tipo": "Laboratorio",
+          "descripcion": "Creación de API Rest con Node.js y Fastify",
+          "fecha": "2025-10-03",
+          "tecnologias": ["TypeScript", "Node.js", "Fastify"],
+          "repoUrl": "https://github.com/Seraf1n0/API-REST_DesarrolloWeb.git",
+          "deployUrl": null
         }
       ]
     }
