@@ -13,12 +13,12 @@ interface ProjectsData {
     description: string;
     coursesSection: {
       title: string;
-    }
+    };
     modalContent: {
       filtersTitle: string;
       worksListTitle: string;
       noWorksMessage: string;
-    }
+    };
   };
 }
 
@@ -48,27 +48,35 @@ interface CursosData {
 
 export default function ProjectsPage() {
   const [projectsData, setProjectsData] = useState<ProjectsData | null>(null);
-  const [cursoSeleccionado, setCursoSeleccionado] = useState<Curso | null>(null);
+  const [cursoSeleccionado, setCursoSeleccionado] = useState<Curso | null>(
+    null
+  );
   const [cursosData, setCursosData] = useState<Curso[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [trabajosFiltrados, setTrabajosFiltrados] = useState<Trabajo[]>([]);
+  const [filtros, setFiltros] = useState({
+    tipo: "",
+    tecnologia: "",
+    fecha: "",
+  }); // Una interface o estructura para los filtros
 
   // Cargar datos desde JSON (cursos y contendo pagina)
   useEffect(() => {
     const loadCursosData = async () => {
       try {
         setLoading(true);
-        const response = await fetch('/data/cursos.json');
-        
+        const response = await fetch("/data/cursos.json");
+
         if (!response.ok) {
-          throw new Error('No se pudieron cargar los datos de cursos');
+          throw new Error("No se pudieron cargar los datos de cursos");
         }
-        
+
         const data: CursosData = await response.json();
         setCursosData(data.cursos);
       } catch (err) {
-        setError(err instanceof Error ? err.message : 'Error desconocido');
-        console.error('Error cargando cursos data:', err);
+        setError(err instanceof Error ? err.message : "Error desconocido");
+        console.error("Error cargando cursos data:", err);
       } finally {
         setLoading(false);
       }
@@ -76,22 +84,52 @@ export default function ProjectsPage() {
 
     const loadProjectsData = async () => {
       try {
-        const response = await fetch('/data/projects-data.json');
-        
+        const response = await fetch("/data/projects-data.json");
+
         if (!response.ok) {
-          throw new Error('No se pudieron cargar los datos de la pagina projects');
+          throw new Error(
+            "No se pudieron cargar los datos de la pagina projects"
+          );
         }
 
         const data: ProjectsData = await response.json();
         setProjectsData(data);
       } catch (err) {
-        setError(err instanceof Error ? err.message : 'Errpr desconocido');
-      } 
-    }
+        setError(err instanceof Error ? err.message : "Errpr desconocido");
+      }
+    };
 
     loadProjectsData();
     loadCursosData();
   }, []);
+
+  // Se filtran los trabajos cuando el curso seleccionado cambie a uno valido y por cada cambio en los filtros
+  useEffect(() => {
+    if (cursoSeleccionado) {
+      const filtrados = cursoSeleccionado.trabajos.filter((trabajo) => {
+        const cumpleTipo = filtros.tipo ? trabajo.tipo === filtros.tipo : true;
+        const cumpleTecnologia = filtros.tecnologia
+          ? trabajo.tecnologias.some((tec) =>
+              tec.toLowerCase().includes(filtros.tecnologia.toLowerCase())
+            )
+          : true;
+        const cumpleFecha = filtros.fecha
+          ? trabajo.fecha === filtros.fecha
+          : true;
+
+        return cumpleTipo && cumpleTecnologia && cumpleFecha;
+      });
+
+      setTrabajosFiltrados(filtrados);
+    }
+  }, [cursoSeleccionado, filtros]);
+
+  const handleFiltroChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
+    const { name, value } = e.target;
+    setFiltros((prev) => ({ ...prev, [name]: value }));
+  };
 
   const handleCursoClick = (curso: Curso) => {
     setCursoSeleccionado(curso);
@@ -121,17 +159,17 @@ export default function ProjectsPage() {
     <main className="projects-container">
       <header className="projects-header">
         <h1 className="projects-title">{projectsData?.pageContent.title}</h1>
-        <p className="projects-desc">
-          {projectsData?.pageContent.description}
-        </p>
+        <p className="projects-desc">{projectsData?.pageContent.description}</p>
       </header>
 
       {/* Grid de cursos */}
       <section className="cursos-section">
-        <h2 className="cursos-section-title">{projectsData?.pageContent.title}</h2>
+        <h2 className="cursos-section-title">
+          {projectsData?.pageContent.title}
+        </h2>
         <div className="cursos-grid">
           {cursosData.map((curso) => (
-            <CardCurso 
+            <CardCurso
               key={curso.codigo}
               codigo={curso.codigo}
               nombre={curso.nombre}
@@ -145,8 +183,8 @@ export default function ProjectsPage() {
       </section>
 
       {/* Modal para mostrar trabajos del curso seleccionado */}
-      <ModalTrabajos 
-        open={!!cursoSeleccionado} 
+      <ModalTrabajos
+        open={!!cursoSeleccionado}
         onClose={() => setCursoSeleccionado(null)}
       >
         <div className="modal-header">
@@ -154,25 +192,31 @@ export default function ProjectsPage() {
             Trabajos del Curso: {cursoSeleccionado?.nombre}
           </h2>
           <p className="modal-subtitle">Código: {cursoSeleccionado?.codigo}</p>
-          <p className="modal-period">{cursoSeleccionado?.periodo} - Semestre {cursoSeleccionado?.semestre}</p>
+          <p className="modal-period">
+            {cursoSeleccionado?.periodo} - Semestre{" "}
+            {cursoSeleccionado?.semestre}
+          </p>
         </div>
-        
+
         <section className="filtros-section">
-          <h3 className="filtros-title">{projectsData?.pageContent.modalContent.filtersTitle}</h3>
-          <FiltrosTrabajos />
+          <h3 className="filtros-title">
+            {projectsData?.pageContent.modalContent.filtersTitle}
+          </h3>
+          <FiltrosTrabajos filtros={filtros} onFiltroChange={handleFiltroChange} />
         </section>
-        
+
         <section className="trabajos-section">
           <h3 className="trabajos-section-title">
-            {projectsData?.pageContent.modalContent.worksListTitle} ({cursoSeleccionado?.trabajos.length || 0})
+            {projectsData?.pageContent.modalContent.worksListTitle} (
+            {trabajosFiltrados.length})
           </h3>
           <div className="trabajos-grid">
-            {cursoSeleccionado?.trabajos.map((trabajo, idx) => (
-              <CardTrabajo key={`${cursoSeleccionado.codigo}-${idx}`} {...trabajo} />
-            )) || []}
+            {trabajosFiltrados.map((trabajo, idx) => (
+              <CardTrabajo key={`${cursoSeleccionado?.codigo}-${idx}`} {...trabajo} />
+            ))}
           </div>
-          
-          {cursoSeleccionado?.trabajos.length === 0 && (
+
+          {trabajosFiltrados.length === 0 && (
             <div className="no-trabajos-message">
               <p>{projectsData?.pageContent.modalContent.noWorksMessage}</p>
             </div>
