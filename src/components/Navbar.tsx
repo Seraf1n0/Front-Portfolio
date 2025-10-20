@@ -5,6 +5,7 @@ const links = [
   { href: "/", label: "Inicio" },
   { href: "/about", label: "Sobre Mí" },
   { href: "/projects", label: "Proyectos" },
+  { href: "/comments", label: "Comentarios" },
 ];
 
 export default function Navbar() {
