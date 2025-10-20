@@ -1,8 +1,56 @@
 [
   {
     "id": 1760922007073,
-    "icono": "icon-1",
+    "icono": "icon-4",
     "nombre": "Yosimar",
-    "texto": "Comentario de prueba"
+    "texto": "Hola a todos!, favor abstenerse de comentarios no constructivos"
+  },
+  {
+    "id": 1760922291344,
+    "icono": "icon-2",
+    "nombre": "El del ICE",
+    "texto": "En mantenimiento por comentarios inapropiados"
+  },
+  {
+    "id": 1760922554692,
+    "icono": "icon-1",
+    "nombre": "Dylantero",
+    "texto": "No me carga de tantos proyectos"
+  },
+  {
+    "id": 1760922949527,
+    "icono": "icon-3",
+    "nombre": "Lemark",
+    "texto": "Buen sitio no olviden apostar al rojo"
+  },
+  {
+    "id": 1760923186259,
+    "icono": "icon-4",
+    "nombre": "Albion online",
+    "texto": "albion online es un mmorpg no lineal en el que escribes tu propia historia sin limitarte a seguir un"
+  },
+  {
+    "id": 1760923462807,
+    "icono": "icon-1",
+    "nombre": "Dylan",
+    "texto": "Viva Saprissa"
+  },
+  {
+    "id": 1760924750117,
+    "icono": "icon-2",
+    "nombre": "Municipalidad",
+    "texto": "Recuerde pagar su deuda de 10 millones antes del 31 de octubre, de lo contrario... "
+  },
+  {
+    "id": 1760924809276,
+    "icono": "icon-2",
+    "nombre": "Anónimo",
+    "texto": "A Yosimar usualmente se le ve buscando travestis cerca del McDonald’s"
+  },
+  {
+    "id": 1760925557222,
+    "icono": "icon-2",
+    "nombre": "Alberto Carlos Bustos",
+    "texto": "Buen sitio, sin embargo poco atractivo "
   }
 ]

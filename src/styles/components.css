@@ -50,7 +50,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  align-items: center;
+  align-items: center; 
 }
 
 .navbar-links-open {
@@ -76,15 +76,6 @@
 
 .brand-link:hover {
   color: #a5b4fc;
-}
-
-.navbar-links {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  align-items: center;
 }
 
 .nav-link {

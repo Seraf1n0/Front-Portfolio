@@ -96,9 +96,6 @@ export default function CommentsPage() {
         aria-label="Crear comentario"
       >
         <div className="comments-input">
-          <div className="comments-input-icon">
-            <span className="default-icon">👤</span>
-          </div>
           <div className="comments-input-fields">
             <input
               type="text"
@@ -139,7 +136,13 @@ export default function CommentsPage() {
         <div className="comments-list">
           {comentarios.map((comentario) => (
             <div key={comentario.id} className="comment-card">
-              <div className={`comment-icon ${comentario.icono}`}></div>
+              <div className="comment-icon">
+                <img
+                  src={`/icons/${comentario.icono}.png`}
+                  alt={`Icono ${comentario.icono}`}
+                  className="comment-icon-img"
+                />
+              </div>
               <div className="comment-content">
                 <h3 className="comment-name">{comentario.nombre}</h3>
                 <p className="comment-text">{comentario.texto}</p>
