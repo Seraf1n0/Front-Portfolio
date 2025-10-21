@@ -8,6 +8,7 @@ const links = [
   { href: "/about", label: "Sobre Mí" },
   { href: "/projects", label: "Proyectos" },
   { href: "/comments", label: "Comentarios" },
+  { href: "/hobbies", label: "Hobbies" },
 ];
 
 export default function Navbar() {
