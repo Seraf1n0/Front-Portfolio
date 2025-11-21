@@ -10,6 +10,7 @@ const links = [
   { href: "/comments", label: "Comentarios" },
   { href: "/hobbies", label: "Hobbies" },
   { href: "/roadmap", label: "Roadmap" },
+  { href: "/contact", label: "Contacto" },
 ];
 
 export default function Navbar() {

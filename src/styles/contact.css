@@ -1,0 +1,122 @@
+.contact-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.contact-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #1e293b, #334155);
+  padding: 1.8rem 1.3rem;
+  border: 1px solid #475569;
+  border-radius: 14px;
+}
+.contact-title {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #e3e8f0;
+}
+.contact-sub {
+  margin: 0.4rem 0 0;
+  color: #a5b4fc;
+}
+.contact-card {
+  background: #1f2533;
+  border: 1px solid #2d3442;
+  border-radius: 14px;
+  padding: 1.4rem 1.3rem;
+  margin-bottom: 1.6rem;
+}
+.contact-name {
+  margin: 0 0 1rem;
+  font-size: 1.6rem;
+  color: #7dd3fc;
+}
+.contact-list {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+.label {
+  font-weight: 600;
+  color: #cbd5e1;
+}
+.contact-link {
+  color: #93c5fd;
+  text-decoration: none;
+}
+.contact-link:hover {
+  text-decoration: underline;
+}
+.contact-avail {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+.contact-channels {
+  background: #232a38;
+  border: 1px solid #303846;
+  border-radius: 12px;
+  padding: 1.1rem 1rem;
+}
+.channels-title {
+  margin: 0 0 0.9rem;
+  font-size: 1.2rem;
+  color: #e3e8f0;
+}
+.channels-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.channel-link {
+  display: inline-block;
+  padding: 0.45rem 0.9rem;
+  background: #303846;
+  border: 1px solid #3b4656;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  letter-spacing: 0.4px;
+  color: #e3e8f0;
+  text-decoration: none;
+}
+.channel-link:hover {
+  background: #3b4656;
+}
+.loading-small {
+  text-align: center;
+  padding: 2rem;
+}
+.error-message {
+  text-align: center;
+  padding: 2rem;
+}
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 1.9rem;
+  }
+  .contact-container {
+    padding: 1.3rem;
+  }
+}
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 1.6rem;
+  }
+  .contact-card,
+  .contact-channels {
+    padding: 1rem 0.9rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .channel-link {
+    transition: none;
+  }
+}

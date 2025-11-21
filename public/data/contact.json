@@ -1,0 +1,12 @@
+{
+  "nombre": "Yosimar Antonio",
+  "rol": "Desarrollador Web & Entusiasta de Ciberseguridad, Redes y Administración de Proyectos",
+  "ubicacion": "Centro Limón, Limón, Costa Rica",
+  "telefono": "+506 7081 xxxx",
+  "email": "yosimarantonio12@gmail.com",
+  "disponibilidad": "Disponible para colaboración y oportunidades remotas.",
+  "canales": [
+    { "tipo": "GitHub", "url": "https://github.com/Seraf1n0" },
+    { "tipo": "LinkedIn", "url": "https://www.linkedin.com/in/yosimar-montenegro-464642338/" }
+  ]
+}
