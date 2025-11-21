@@ -88,6 +88,57 @@
           "tecnologias": ["TypeScript", "Node.js", "Fastify"],
           "repoUrl": "https://github.com/Seraf1n0/API-REST_DesarrolloWeb.git",
           "deployUrl": null
+        },
+        {
+          "nombre": "Lab9: GraphQL",
+          "tipo": "Laboratorio",
+          "descripcion": "Creación de una API GraphQL con Node.js y typescript",
+          "fecha": "2025-10-12",
+          "tecnologias": ["TypeScript", "Node.js", "GraphQL"],
+          "repoUrl": "https://github.com/Seraf1n0/API-GraphQL-WEB.git"
+        },
+        {
+          "nombre": "Lab10: Integración API con Frontend",
+          "tipo": "Laboratorio",
+          "descripcion": "Integrar el API REST con un cliente basico en Next.js",
+          "fecha": "2025-10-24",
+          "tecnologias": ["TypeScript", "Next.js", "Node.js", "Fastify"],
+          "repoUrl": "https://github.com/Seraf1n0/Lab10-Desarrolloweb.git"
+        },
+        {
+          "nombre": "Portafolio: Entrega 2",
+          "tipo": "Portafolio",
+          "descripcion": "Mejorar el portafolio profesional con una sección de Hobbies y sección de comentarios",
+          "fecha": "2025-10-26",
+          "tecnologias": ["HTML", "CSS", "TypeScript", "Next JS", "Vercel"],
+          "repoUrl": "https://github.com/Seraf1n0/Front-Portfolio.git"
+        },
+        {
+          "nombre": "Lab12: Ruby On Rails",
+          "tipo": "Laboratorio",
+          "descripcion": "Exposición sobre Ruby on Rails y sus características principales",
+          "fecha": "2025-10-31",
+          "tecnologias": ["Ruby", "Rails"],
+          "repoUrl": null,
+          "deployUrl": null
+        },
+        {
+          "nombre": "Lab13: ChatBot con OpenAI",
+          "tipo": "Laboratorio",
+          "descripcion": "Implementar un chatbot usando OpenRoute y Vue JS para el frontend con sesgo en banca prometedores.",
+          "fecha": "2025-11-07",
+          "tecnologias": ["JavaScript", "Vue.js", "OpenAI"],
+          "repoUrl": "https://github.com/Seraf1n0/chatBot-Lab12.git",
+          "deployUrl": null
+        },
+        {
+          "nombre": "Proyecto 2: API REST Banca Prometedores",
+          "tipo": "Proyecto",
+          "descripcion": "Desarrollo de API REST para la app de banca prometedores, con endpoints de usuarios, cuentas, transacciones y seguridad.",
+          "fecha": "2025-11-02",
+          "tecnologias": ["Asp.NET Core", "C#", "PostgreSQL", "Supabase"],
+          "repoUrl": "https://github.com/Seraf1n0/BancaWeb.git",
+          "deployUrl": "http://86.48.22.73/api/v1/"
         }
       ]
     }

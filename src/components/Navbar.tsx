@@ -9,6 +9,7 @@ const links = [
   { href: "/projects", label: "Proyectos" },
   { href: "/comments", label: "Comentarios" },
   { href: "/hobbies", label: "Hobbies" },
+  { href: "/roadmap", label: "Roadmap" },
 ];
 
 export default function Navbar() {

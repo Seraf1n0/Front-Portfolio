@@ -1,0 +1,27 @@
+{
+  "categorias": [
+    {
+      "nombre": "Frontend",
+      "items": [
+        { "tecnologia": "Next.js", "level": 70, "goal": "Optimización y manejo de rutas por autorización" },
+        { "tecnologia": "TypeScript", "level": 75, "goal": "Tipos genéricos utilitarios" }
+      ]
+    },
+    {
+      "nombre": "Backend",
+      "items": [
+        { "tecnologia": "Node.js", "level": 78, "goal": "Testeo y automatización" },
+        { "tecnologia": "API REST", "level": 82, "goal": "Versionado y documentación" }
+      ]
+    },
+    {
+      "nombre": "Ciberseguridad",
+      "items": [
+        { "tecnologia": "Pruebas en servidores propios", "level": 30, "goal": "Montar entornos aislados para análisis y fuzzing básico" },
+        { "tecnologia": "Protección de puertos y servicios", "level": 30, "goal": "Automatizar reglas de firewall y monitoreo de exposición" },
+        { "tecnologia": "Seguridad en la nube (AWS/Azure)", "level": 30, "goal": "Fundamentos de IAM, políticas y configuración segura inicial" },
+        { "tecnologia": "OWASP Top 10", "level": 30, "goal": "Profundizar en identificación y mitigación práctica de cada categoría" }
+      ]
+    }
+  ]
+}
